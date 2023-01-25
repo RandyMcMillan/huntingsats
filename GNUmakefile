@@ -1,5 +1,6 @@
-default:A B C D E F G H I J K
-	@python3 seedrecover.py --no-dupchecks --mnemonic-length 12 --language EN --dsw --wallet-type bip39 --addrs bc1q7kw2uepv6hfffhhxx2vplkkpcwsslcw9hsupc6 --addr-limit 1 --passphrase-list tokens_passphrase.txt --tokenlist tokens_seed.txt
+default:additional A B C D E F G H I J K
+	@python3 seedrecover.py --no-dupchecks --mnemonic-length 12 --language EN --dsw --wallet-type bip39 --addrs bc1q7kw2uepv6hfffhhxx2vplkkpcwsslcw9hsupc6 --addr-limit 1 --passphrase-list tokens_passphrase.txt --multi-file-seedlist --listseeds --tokenlist tokens_seed.txt --tokenlist additional.txt
+	@python3 seedrecover.py --no-dupchecks --mnemonic-length 12 --language EN --dsw --wallet-type bip39 --addrs bc1q7kw2uepv6hfffhhxx2vplkkpcwsslcw9hsupc6 --addr-limit 1 --passphrase-list tokens_passphrase.txt --multi-file-seedlist --tokenlist tokens_seed.txt --tokenlist additional.txt --listseeds
 	@python3 seedrecover.py --no-dupchecks --mnemonic-length 12 --language EN --dsw --wallet-type bip39 --addrs bc1q7kw2uepv6hfffhhxx2vplkkpcwsslcw9hsupc6 --addr-limit 1 --passphrase-list tokens_seed.txt --tokenlist tokens_seed.txt
 	#@python3 seedrecover.py --no-dupchecks --mnemonic-length 12 --language EN --dsw --wallet-type bip39 --addrs bc1q7kw2uepv6hfffhhxx2vplkkpcwsslcw9hsupc6 --addr-limit 1 --passphrase-list tokens_seed.txt --tokenlist tokens_passphrase.txt
 A:
@@ -24,3 +25,10 @@ J:
 	@python3 seedrecover.py --no-dupchecks --mnemonic-length 12 --language EN --dsw --wallet-type bip39 --addrs bc1q7kw2uepv6hfffhhxx2vplkkpcwsslcw9hsupc6 --addr-limit 1 --passphrase-list j.txt --tokenlist tokens_seed.txt
 K:
 	@python3 seedrecover.py --no-dupchecks --mnemonic-length 12 --language EN --dsw --wallet-type bip39 --addrs bc1q7kw2uepv6hfffhhxx2vplkkpcwsslcw9hsupc6 --addr-limit 1 --passphrase-list k.txt --tokenlist tokens_seed.txt
+
+
+
+
+additional:
+	@echo additional
+	@$(PWD)/additional.sh lib/bitcoinlib/wordlist/english.txt > additional.txt
