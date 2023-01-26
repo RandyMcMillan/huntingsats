@@ -45,14 +45,6 @@ additional:
 	@echo additional
 	@cat $(PWD)/tokens_seed.txt > $(PWD)/additional.txt
 	@$(PWD)/additional.sh lib/bitcoinlib/wordlist/english.txt >> $(PWD)/additional.txt
-	@$(PWD)/additional.sh lib/bitcoinlib/wordlist/english.txt >> $(PWD)/additional.txt
-	@$(PWD)/additional.sh lib/bitcoinlib/wordlist/english.txt >> $(PWD)/additional.txt
-	@$(PWD)/additional.sh lib/bitcoinlib/wordlist/english.txt >> $(PWD)/additional.txt
-	@$(PWD)/additional.sh lib/bitcoinlib/wordlist/english.txt >> $(PWD)/additional.txt
-	@$(PWD)/additional.sh lib/bitcoinlib/wordlist/english.txt >> $(PWD)/additional.txt
-	@$(PWD)/additional.sh lib/bitcoinlib/wordlist/english.txt >> $(PWD)/additional.txt
-	@$(PWD)/additional.sh lib/bitcoinlib/wordlist/english.txt >> $(PWD)/additional.txt
-	@$(PWD)/additional.sh lib/bitcoinlib/wordlist/english.txt >> $(PWD)/additional.txt
 
 .PHONY: venv
 venv:## 	create python3 virtualenv .venv
