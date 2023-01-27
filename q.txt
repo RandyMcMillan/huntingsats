@@ -1,0 +1,8 @@
+quality
+quantum
+quarter
+question
+quick
+quit
+quiz
+quote
