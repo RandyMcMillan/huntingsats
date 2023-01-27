@@ -11,7 +11,7 @@ help:## 	print verbose help
 	@sed -n 's/^### //p' ${MAKEFILE_LIST} | column -t -s ':' |  sed -e 's/^/### /'
 
 all:## 	make A-Z & make default
-	$(MAKE) A B C D E F G H I J K &
+	$(MAKE) A B C D E F G H I J K L M N O P Q R S T U V W X Y Z &
 	$(MAKE) default &
 
 default:additional## 	default case
@@ -51,9 +51,51 @@ J:
 K:
 	@echo K
 	@$(PYTHON3) seedrecover.py --no-dupchecks --mnemonic-length 12 --language EN --dsw --wallet-type bip39 --addrs bc1q7kw2uepv6hfffhhxx2vplkkpcwsslcw9hsupc6 --addr-limit 1 --passphrase-list                 k.txt --multi-file-seedlist --listseeds --tokenlist additional.txt &
-
-
-
+L:
+	@echo L
+	@$(PYTHON3) seedrecover.py --no-dupchecks --mnemonic-length 12 --language EN --dsw --wallet-type bip39 --addrs bc1q7kw2uepv6hfffhhxx2vplkkpcwsslcw9hsupc6 --addr-limit 1 --passphrase-list                 l.txt --multi-file-seedlist --listseeds --tokenlist additional.txt &
+M:
+	@echo M
+	@$(PYTHON3) seedrecover.py --no-dupchecks --mnemonic-length 12 --language EN --dsw --wallet-type bip39 --addrs bc1q7kw2uepv6hfffhhxx2vplkkpcwsslcw9hsupc6 --addr-limit 1 --passphrase-list                 m.txt --multi-file-seedlist --listseeds --tokenlist additional.txt &
+N:
+	@echo N
+	@$(PYTHON3) seedrecover.py --no-dupchecks --mnemonic-length 12 --language EN --dsw --wallet-type bip39 --addrs bc1q7kw2uepv6hfffhhxx2vplkkpcwsslcw9hsupc6 --addr-limit 1 --passphrase-list                 n.txt --multi-file-seedlist --listseeds --tokenlist additional.txt &
+O:
+	@echo O
+	@$(PYTHON3) seedrecover.py --no-dupchecks --mnemonic-length 12 --language EN --dsw --wallet-type bip39 --addrs bc1q7kw2uepv6hfffhhxx2vplkkpcwsslcw9hsupc6 --addr-limit 1 --passphrase-list                 o.txt --multi-file-seedlist --listseeds --tokenlist additional.txt &
+P:
+	@echo P
+	@$(PYTHON3) seedrecover.py --no-dupchecks --mnemonic-length 12 --language EN --dsw --wallet-type bip39 --addrs bc1q7kw2uepv6hfffhhxx2vplkkpcwsslcw9hsupc6 --addr-limit 1 --passphrase-list                 p.txt --multi-file-seedlist --listseeds --tokenlist additional.txt &
+Q:
+	@echo Q
+	@$(PYTHON3) seedrecover.py --no-dupchecks --mnemonic-length 12 --language EN --dsw --wallet-type bip39 --addrs bc1q7kw2uepv6hfffhhxx2vplkkpcwsslcw9hsupc6 --addr-limit 1 --passphrase-list                 q.txt --multi-file-seedlist --listseeds --tokenlist additional.txt &
+R:
+	@echo R
+	@$(PYTHON3) seedrecover.py --no-dupchecks --mnemonic-length 12 --language EN --dsw --wallet-type bip39 --addrs bc1q7kw2uepv6hfffhhxx2vplkkpcwsslcw9hsupc6 --addr-limit 1 --passphrase-list                 r.txt --multi-file-seedlist --listseeds --tokenlist additional.txt &
+S:
+	@echo S
+	@$(PYTHON3) seedrecover.py --no-dupchecks --mnemonic-length 12 --language EN --dsw --wallet-type bip39 --addrs bc1q7kw2uepv6hfffhhxx2vplkkpcwsslcw9hsupc6 --addr-limit 1 --passphrase-list                 s.txt --multi-file-seedlist --listseeds --tokenlist additional.txt &
+T:
+	@echo T
+	@$(PYTHON3) seedrecover.py --no-dupchecks --mnemonic-length 12 --language EN --dsw --wallet-type bip39 --addrs bc1q7kw2uepv6hfffhhxx2vplkkpcwsslcw9hsupc6 --addr-limit 1 --passphrase-list                 t.txt --multi-file-seedlist --listseeds --tokenlist additional.txt &
+U:
+	@echo U
+	@$(PYTHON3) seedrecover.py --no-dupchecks --mnemonic-length 12 --language EN --dsw --wallet-type bip39 --addrs bc1q7kw2uepv6hfffhhxx2vplkkpcwsslcw9hsupc6 --addr-limit 1 --passphrase-list                 u.txt --multi-file-seedlist --listseeds --tokenlist additional.txt &
+V:
+	@echo V
+	@$(PYTHON3) seedrecover.py --no-dupchecks --mnemonic-length 12 --language EN --dsw --wallet-type bip39 --addrs bc1q7kw2uepv6hfffhhxx2vplkkpcwsslcw9hsupc6 --addr-limit 1 --passphrase-list                 v.txt --multi-file-seedlist --listseeds --tokenlist additional.txt &
+W:
+	@echo W
+	@$(PYTHON3) seedrecover.py --no-dupchecks --mnemonic-length 12 --language EN --dsw --wallet-type bip39 --addrs bc1q7kw2uepv6hfffhhxx2vplkkpcwsslcw9hsupc6 --addr-limit 1 --passphrase-list                 w.txt --multi-file-seedlist --listseeds --tokenlist additional.txt &
+X:
+	@echo X
+	@$(PYTHON3) seedrecover.py --no-dupchecks --mnemonic-length 12 --language EN --dsw --wallet-type bip39 --addrs bc1q7kw2uepv6hfffhhxx2vplkkpcwsslcw9hsupc6 --addr-limit 1 --passphrase-list                 x.txt --multi-file-seedlist --listseeds --tokenlist additional.txt &
+Y:
+	@echo Y
+	@$(PYTHON3) seedrecover.py --no-dupchecks --mnemonic-length 12 --language EN --dsw --wallet-type bip39 --addrs bc1q7kw2uepv6hfffhhxx2vplkkpcwsslcw9hsupc6 --addr-limit 1 --passphrase-list                 y.txt --multi-file-seedlist --listseeds --tokenlist additional.txt &
+Z:
+	@echo Z
+	@$(PYTHON3) seedrecover.py --no-dupchecks --mnemonic-length 12 --language EN --dsw --wallet-type bip39 --addrs bc1q7kw2uepv6hfffhhxx2vplkkpcwsslcw9hsupc6 --addr-limit 1 --passphrase-list                 z.txt --multi-file-seedlist --listseeds --tokenlist additional.txt &
 
 additional:## 	create additional.txt from tokens_seed.txt and random bip39 words
 	@cat $(PWD)/tokens_seed.txt > $(PWD)/additional.txt
