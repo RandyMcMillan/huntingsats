@@ -55,10 +55,10 @@ K:
 
 
 
-additional:
-	@echo additional
+additional:## 	create additional.txt from tokens_seed.txt and random bip39 words
 	@cat $(PWD)/tokens_seed.txt > $(PWD)/additional.txt
 	@$(PWD)/additional.sh lib/bitcoinlib/wordlist/english.txt >> $(PWD)/additional.txt
+	@cat $(PWD)/additional.txt
 
 .PHONY: venv
 venv:## 	create python3 virtualenv .venv
