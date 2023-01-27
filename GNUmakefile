@@ -1,8 +1,23 @@
 PYTHON3:=$(shell which python3)
-default:additional
+-:
+	@awk 'BEGIN {FS = ":.*?## "} /^[a-zA-Z_-]+:.*?##/ {printf "\033[36m%-15s\033[0m %s\n", $$1, $$2}' $(MAKEFILE_LIST)
+help:## 	print verbose help
+	@echo
+	@echo "make venv && . .venv/bin/activate && make all"
+	@echo "make venv && . .venv/bin/activate && make default"
+	@echo "note that the ONE of the revealed words is the password: 12 + password"
+	@sed -n 's/^# //p' ${MAKEFILE_LIST} | column -t -s ':' |  sed -e 's/^/# /'
+	@sed -n 's/^## //p' ${MAKEFILE_LIST} | column -t -s ':' |  sed -e 's/^/## /'
+	@sed -n 's/^### //p' ${MAKEFILE_LIST} | column -t -s ':' |  sed -e 's/^/### /'
+
+all:## 	make A-Z default
+	$(MAKE) A B C D E F G H I J K &
+	$(MAKE) default &
+
+default:additional## 	default case
 	@echo default
-	@$(PYTHON3) seedrecover.py --no-dupchecks --mnemonic-length 12 --language EN --dsw --wallet-type bip39 --addrs bc1q7kw2uepv6hfffhhxx2vplkkpcwsslcw9hsupc6 --addr-limit 1 --passphrase-list tokens_passphrase.txt --multi-file-seedlist --listseeds --tokenlist additional.txt &
-	$(MAKE) A B C D E F G H I J K
+	@$(PYTHON3) seedrecover.py --no-dupchecks --mnemonic-length 12 --language EN --dsw --wallet-type bip39 --addrs bc1q7kw2uepv6hfffhhxx2vplkkpcwsslcw9hsupc6 --addr-limit 1 --passphrase-list tokens_seed.txt --multi-file-seedlist --listseeds --tokenlist additional.txt &
+
 A:
 	@echo A
 	@$(PYTHON3) seedrecover.py --no-dupchecks --mnemonic-length 12 --language EN --dsw --wallet-type bip39 --addrs bc1q7kw2uepv6hfffhhxx2vplkkpcwsslcw9hsupc6 --addr-limit 1 --passphrase-list                 a.txt --multi-file-seedlist --listseeds --tokenlist additional.txt &
