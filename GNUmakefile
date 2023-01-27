@@ -10,7 +10,7 @@ help:## 	print verbose help
 	@sed -n 's/^## //p' ${MAKEFILE_LIST} | column -t -s ':' |  sed -e 's/^/## /'
 	@sed -n 's/^### //p' ${MAKEFILE_LIST} | column -t -s ':' |  sed -e 's/^/### /'
 
-all:## 	make A-Z default
+all:## 	make A-Z & make default
 	$(MAKE) A B C D E F G H I J K &
 	$(MAKE) default &
 
