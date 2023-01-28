@@ -2,8 +2,10 @@ blast
 hollow
 state
 monkey
+elder
 design
 present
-elder
 horse
+bunny
+duck
 passphrase
